@@ -17,9 +17,16 @@ namespace Cost_Calculation_Program
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void CloseBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void StorageBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StorageForm storageForm = new StorageForm();
+            storageForm.Show();
         }
     }
 }

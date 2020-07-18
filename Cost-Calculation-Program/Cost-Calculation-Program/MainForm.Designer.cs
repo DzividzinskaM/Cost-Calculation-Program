@@ -28,61 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.StorageButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.StorageBtn = new System.Windows.Forms.Button();
+            this.RecipeBtn = new System.Windows.Forms.Button();
+            this.CloseBtn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // StorageButton
+            // StorageBtn
             // 
-            this.StorageButton.BackColor = System.Drawing.Color.LightCoral;
-            this.StorageButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StorageButton.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
-            this.StorageButton.FlatAppearance.BorderSize = 3;
-            this.StorageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StorageButton.Font = new System.Drawing.Font("Sitka Subheading", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.StorageButton.ForeColor = System.Drawing.Color.White;
-            this.StorageButton.Location = new System.Drawing.Point(54, 169);
-            this.StorageButton.Name = "StorageButton";
-            this.StorageButton.Size = new System.Drawing.Size(145, 70);
-            this.StorageButton.TabIndex = 0;
-            this.StorageButton.Text = "Склад";
-            this.StorageButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.StorageButton.UseVisualStyleBackColor = false;
+            this.StorageBtn.BackColor = System.Drawing.Color.LightCoral;
+            this.StorageBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StorageBtn.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
+            this.StorageBtn.FlatAppearance.BorderSize = 4;
+            this.StorageBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StorageBtn.Font = new System.Drawing.Font("Sitka Subheading", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StorageBtn.ForeColor = System.Drawing.Color.White;
+            this.StorageBtn.Location = new System.Drawing.Point(54, 169);
+            this.StorageBtn.Name = "StorageBtn";
+            this.StorageBtn.Size = new System.Drawing.Size(153, 70);
+            this.StorageBtn.TabIndex = 0;
+            this.StorageBtn.Text = "Склад";
+            this.StorageBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.StorageBtn.UseVisualStyleBackColor = false;
+            this.StorageBtn.Click += new System.EventHandler(this.StorageBtn_Click);
             // 
-            // button1
+            // RecipeBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.LightCoral;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Sitka Subheading", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(516, 169);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 70);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Рецепти";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.RecipeBtn.BackColor = System.Drawing.Color.LightCoral;
+            this.RecipeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RecipeBtn.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
+            this.RecipeBtn.FlatAppearance.BorderSize = 4;
+            this.RecipeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RecipeBtn.Font = new System.Drawing.Font("Sitka Subheading", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RecipeBtn.ForeColor = System.Drawing.Color.White;
+            this.RecipeBtn.Location = new System.Drawing.Point(501, 169);
+            this.RecipeBtn.Name = "RecipeBtn";
+            this.RecipeBtn.Size = new System.Drawing.Size(181, 70);
+            this.RecipeBtn.TabIndex = 1;
+            this.RecipeBtn.Text = "Рецепти";
+            this.RecipeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.RecipeBtn.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // CloseBtn
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightCoral;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Sitka Subheading", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(677, -2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 51);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "X";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.CloseBtn.AutoSize = true;
+            this.CloseBtn.BackColor = System.Drawing.Color.LightCoral;
+            this.CloseBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CloseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseBtn.Font = new System.Drawing.Font("Sitka Subheading", 20F, System.Drawing.FontStyle.Bold);
+            this.CloseBtn.ForeColor = System.Drawing.Color.White;
+            this.CloseBtn.Location = new System.Drawing.Point(677, -2);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Size = new System.Drawing.Size(46, 51);
+            this.CloseBtn.TabIndex = 2;
+            this.CloseBtn.Text = "X";
+            this.CloseBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // MainForm
             // 
@@ -92,9 +93,9 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(721, 286);
             this.ControlBox = false;
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.StorageButton);
+            this.Controls.Add(this.CloseBtn);
+            this.Controls.Add(this.RecipeBtn);
+            this.Controls.Add(this.StorageBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.ShowInTaskbar = false;
@@ -107,8 +108,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button StorageButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button StorageBtn;
+        private System.Windows.Forms.Button RecipeBtn;
+        private System.Windows.Forms.Label CloseBtn;
     }
 }
