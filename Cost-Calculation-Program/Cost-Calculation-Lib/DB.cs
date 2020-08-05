@@ -15,6 +15,12 @@ namespace Cost_Calculation_Lib
 
         public static string connectionStr;
 
+        public readonly string productsTable = "Products";
+
+        public readonly string productIdAttr = "productId";
+        public readonly string productNameAttr = "productName";
+        public readonly string priceAttr = "price";
+
 
         private DB()
         {
